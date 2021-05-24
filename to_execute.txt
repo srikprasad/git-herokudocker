@@ -1,0 +1,18 @@
+cd docker_node_project
+docker build -t nodeapp .
+docker run -p 2000:8080 -d nodeapp
+docker run  -d nodeapp
+
+
+http://192.168.99.100:49160/index.html
+
+heroku login
+heroku create
+docker build -t registry.heroku/rocky-lowlands-92643/web .
+docker push registry.heroku/rocky-lowlands-92643/web 
+
+
+
+a541d316-62b3-42b5-98b8-93abe9da3bf3
+
+docker login --username=srikprasad --password=a541d316-62b3-42b5-98b8-93abe9da3bf3 registry.heroku.com
