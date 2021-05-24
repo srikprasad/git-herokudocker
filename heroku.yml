@@ -1,10 +1,11 @@
 build:
-   docker:
-     web:Dockerfile
-run:
-   web: npm run start
+  docker:
+    web: Dockerfile
 release:
-   image:web
-   command:
-     - npm run migrate up
+  command:
+    - npm run migrate up
+  image: web
+run:
+  web: npm run start
+ 
       
